@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/office-leather-desk-table-with-computer_10371-6.jpg?w=900');
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;   
+  
+}
+
+/*header*/
+.header {
+    background-color: #1a1a4f;
+    padding: 10px;
+    height: 60px;
+    text-align: center;
+    color: white;
+}
+.title button{
+    height: 35px;
+    width: 50px;
+    padding: 5px;
+    font-size: larger;
+    background-color:rgb(251, 16, 126);
+    font-weight: bold;
+    border-color: rgb(251, 16, 126);
+    border-width: 0px;
+    border-radius: 5px;
+}
+.header .title {
+    font-size: 24px;
+    margin-top: -15px;
+}
+.header .nav {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .buttons a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(251, 16, 126);
+    border-radius: 5px;
+    margin: 0 5px;
+}
+a:is(:link,:active,:visited).active{
+    color: #ff4d4d;
+    background-color: white;
+}
+.nav .buttons a:hover {
+    background-color: #e60000;
+}
+/*registration*/
+
+.form-container {
+    background-color:transparent;
+    padding: 10px;
+    border: 1px solid #70f5ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #70f5ff;
+    max-width: 400px;
+    margin: 10px;
+    margin-left: 450px;
+   
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: underline;
+    text-decoration-color: rgb(251, 16, 126);
+}
+h3{
+    color: aqua;
+    text-align: center;
+    text-decoration: dotted;
+}
+label {
+    display: block;
+    margin-top: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-width: 1px  ;
+    border-color: whitesmoke;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+select {
+    appearance: none;
+}
+select option{
+    color: black;
+}
+ button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.reset{
+    margin-left: 75px;
+}
+
+
+.user-specific-fields {
+    display: none;
+}
+/* Footer styles */
+.footer {
+    background-color: #1a1a4f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+}
+.footer p {
+    font-size: 10px;
+    margin: 0;
+}
+.footer .links, .footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 16, 126);
+    width: 175px;
+    margin: 3px;
+    border-radius: 15px;
+}
+.footer .links a, .footer .social a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.footer .social a img {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}

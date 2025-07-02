@@ -1,0 +1,56 @@
+.main-container{
+    background-color: rgb(81, 81, 253);
+    width: 50vh;
+    height: 45vh;
+    padding: 10px;
+    
+}
+
+
+.success{
+    background-color: #00fc2a;
+    height: 15vh;
+    width: 49vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 38px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+   
+    color: white;
+
+}
+.description{
+    background-color: white;
+    padding: 10px;
+    width: 266.5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+p{
+    text-align: center;
+}
+.btn{
+ margin-left: 60px;
+ background-color: #00fc2a;
+ color: rgb(255, 253, 253);
+ font-size: medium;
+ border-radius: 30px;
+ border-width: 0px;
+ height: 35px;
+ width: 140px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+
+
+
+

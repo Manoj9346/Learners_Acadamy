@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="la_register.css">
+    <title>Register</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="nav">
+            <div class="title"><button>LA</button> Learner's Academy</div>
+            <div class="buttons">
+                <a href="la_landing.html" class="active">Home</a>
+                <a href="login.jsp">Login</a>
+                <a href="la_register.html">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm" action="la_rsuccess.html" method="post">
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType" onchange="updateFormFields()">
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+            </select>
+
+            <!-- Common Fields for both Student and Instructor -->
+            <div id="commonFields">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <!-- Fields specific to Students -->
+            <div id="studentFields" class="user-specific-fields">
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID">
+
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major">
+
+                <label for="graduationYear">Graduation Year:</label>
+                <input type="number" id="graduationYear" name="graduationYear">
+
+                <label for="advisor">Advisor:</label>
+                <input type="text" id="advisor" name="advisor">
+
+                <label for="gpa">GPA:</label>
+                <input type="text" id="gpa" name="gpa">
+            </div>
+
+            <!-- Fields specific to Instructors -->
+            <div id="instructorFields" class="user-specific-fields">
+                <label for="instructorID">Instructor ID:</label>
+                <input type="text" id="instructorID" name="instructorID">
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department">
+
+                <label for="hireDate">Hire Date:</label>
+                <input type="date" id="hireDate" name="hireDate">
+
+                <label for="coursesTaught">Courses Taught:</label>
+                <input type="text" id="coursesTaught" name="coursesTaught">
+
+                <label for="officeNumber">Office Number:</label>
+                <input type="text" id="officeNumber" name="officeNumber">
+            </div>
+
+            <div class="btn">
+                <button type="submit">Register</button>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="links">
+            <p>Quick links</p>
+            <a href="la_about.html">About Us</a>
+            <a href="la_faq.html">FAQ's</a>
+        </div>
+        <div class="social">
+            <p>Connect with us</p>
+            <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://www.whatsapp.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" alt="WhatsApp"></a>
+        </div>
+    </div>
+
+    <script src="la_register.js"></script>
+</body>
+</html>
